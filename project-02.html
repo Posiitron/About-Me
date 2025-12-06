@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dot-pattern"></div>
+    
+    <div class="content">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-black/5">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-xl font-light tracking-wider hover:opacity-70 transition-opacity">← BACK</a>
+                <div class="flex gap-8">
+                    <a href="index.html#about" class="nav-link text-sm tracking-wide hover:text-black">ABOUT</a>
+                    <a href="index.html#timeline" class="nav-link text-sm tracking-wide hover:text-black">TIMELINE</a>
+                    <a href="index.html#work" class="nav-link text-sm tracking-wide hover:text-black">WORK</a>
+                    <a href="index.html#contact" class="nav-link text-sm tracking-wide hover:text-black">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center px-6 pt-20">
+            <div class="max-w-4xl w-full">
+                <div class="mb-8">
+                    <p class="text-sm tracking-widest text-gray-500 mb-4">PROJECT 01 / 2024</p>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-light mb-6 glow-text">
+                    E-Commerce Platform
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 font-light max-w-2xl leading-relaxed mb-8">
+                    A modern e-commerce solution with seamless checkout experience and real-time inventory management.
+                </p>
+                <div class="flex flex-wrap gap-3 mb-12">
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">React</span>
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Node.js</span>
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">MongoDB</span>
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Stripe API</span>
+                </div>
+                
+                <!-- Project Links -->
+                <div class="flex gap-4">
+                    <a href="#" class="px-6 py-3 bg-black text-white rounded-full font-light tracking-wide hover:bg-gray-800 transition-all text-sm">
+                        VIEW LIVE SITE
+                    </a>
+                    <a href="#" class="px-6 py-3 bg-white border border-black/20 text-black rounded-full font-light tracking-wide hover:bg-black/5 transition-all text-sm">
+                        VIEW CODE
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Image -->
+        <section class="max-w-6xl mx-auto px-6 py-20">
+            <div class="rounded-2xl overflow-hidden border border-black/10 bg-gradient-to-br from-gray-100 to-gray-200">
+                <!-- Replace this div with your project image -->
+                <div class="aspect-video flex items-center justify-center">
+                    <p class="text-gray-400 text-lg tracking-wide">PROJECT HERO IMAGE</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="max-w-6xl mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-3 gap-16">
+                <div>
+                    <h3 class="text-sm tracking-widest text-gray-500 mb-4">ROLE</h3>
+                    <p class="text-gray-800 leading-relaxed">Full Stack Developer</p>
+                </div>
+                <div>
+                    <h3 class="text-sm tracking-widest text-gray-500 mb-4">TIMELINE</h3>
+                    <p class="text-gray-800 leading-relaxed">6 months (Jan - Jun 2024)</p>
+                </div>
+                <div>
+                    <h3 class="text-sm tracking-widest text-gray-500 mb-4">CLIENT</h3>
+                    <p class="text-gray-800 leading-relaxed">Tech Company Inc.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-line max-w-6xl mx-auto"></div>
+
+        <!-- Project Description -->
+        <section class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-light mb-8 tracking-wide">OVERVIEW</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    This e-commerce platform was designed to provide a seamless shopping experience for users while giving administrators powerful tools to manage their inventory and orders. The project required careful attention to both user experience and backend performance.
+                </p>
+                <p>
+                    Working closely with the client, we identified key pain points in their existing system and designed a solution that would scale with their growing business. The platform needed to handle high traffic volumes during peak shopping seasons while maintaining fast load times and a responsive interface.
+                </p>
+            </div>
+        </section>
+
+        <!-- Challenge Section -->
+        <section class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-light mb-8 tracking-wide">THE CHALLENGE</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    The main challenge was creating a checkout process that was both secure and intuitive. Users needed to feel confident in their purchases, while the system had to prevent fraud and handle edge cases gracefully.
+                </p>
+                <ul class="list-none space-y-3 pl-6 border-l-2 border-black/10">
+                    <li>• Real-time inventory synchronization across multiple warehouses</li>
+                    <li>• Integration with third-party payment processors</li>
+                    <li>• Mobile-responsive design that works across all devices</li>
+                    <li>• Performance optimization for high-traffic periods</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-light mb-8 tracking-wide">THE SOLUTION</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    We implemented a microservices architecture that allowed different parts of the system to scale independently. The frontend was built using React for a dynamic user experience, while the backend utilized Node.js with MongoDB for flexible data management.
+                </p>
+                <p>
+                    Key features included:
+                </p>
+                <ul class="list-none space-y-3 pl-6 border-l-2 border-black/10">
+                    <li>• One-click checkout with saved payment methods</li>
+                    <li>• Real-time stock updates and low inventory alerts</li>
+                    <li>• Advanced search and filtering capabilities</li>
+                    <li>• Personalized product recommendations</li>
+                    <li>• Comprehensive admin dashboard with analytics</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Project Images Grid -->
+        <section class="max-w-6xl mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-2xl overflow-hidden border border-black/10 bg-gradient-to-br from-gray-100 to-gray-200">
+                    <div class="aspect-video flex items-center justify-center">
+                        <p class="text-gray-400 text-sm tracking-wide">IMAGE 1</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden border border-black/10 bg-gradient-to-br from-gray-100 to-gray-200">
+                    <div class="aspect-video flex items-center justify-center">
+                        <p class="text-gray-400 text-sm tracking-wide">IMAGE 2</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden border border-black/10 bg-gradient-to-br from-gray-100 to-gray-200 md:col-span-2">
+                    <div class="aspect-video flex items-center justify-center">
+                        <p class="text-gray-400 text-sm tracking-wide">FULL WIDTH IMAGE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-light mb-8 tracking-wide">RESULTS</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg mb-12">
+                <p>
+                    The platform launched successfully and exceeded all performance targets. User feedback was overwhelmingly positive, with particular praise for the intuitive checkout process and fast page load times.
+                </p>
+            </div>
+            
+            <!-- Stats Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-light mb-2">45%</div>
+                    <p class="text-gray-500 text-sm tracking-wide">INCREASE IN CONVERSIONS</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-light mb-2">2.3s</div>
+                    <p class="text-gray-500 text-sm tracking-wide">AVERAGE PAGE LOAD TIME</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-light mb-2">98%</div>
+                    <p class="text-gray-500 text-sm tracking-wide">CUSTOMER SATISFACTION</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-line max-w-6xl mx-auto"></div>
+
+        <!-- Next Project -->
+        <section class="max-w-6xl mx-auto px-6 py-20">
+            <div class="text-center mb-12">
+                <p class="text-sm tracking-widest text-gray-500 mb-4">NEXT PROJECT</p>
+                <h2 class="text-4xl font-light mb-6 tracking-wide">Portfolio Redesign</h2>
+                <a href="project-02.html" class="inline-block px-8 py-3 bg-black text-white rounded-full font-light tracking-wide hover:bg-gray-800 transition-all">
+                    VIEW PROJECT →
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-black/5 py-8 bg-white/50 backdrop-blur-sm">
+            <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+                <p>© 2024 All rights reserved</p>
+                <p class="tracking-wider">DESIGNED & DEVELOPED WITH PRECISION</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

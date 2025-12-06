@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Robot Maze Navigation - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dot-pattern"></div>
+
+    <div class="content">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-black/5">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-xl font-light tracking-wider hover:opacity-70 transition-opacity">←
+                    BACK</a>
+                <div class="flex gap-8">
+                    <a href="index.html#about" class="nav-link text-sm tracking-wide hover:text-black">ABOUT</a>
+                    <a href="index.html#timeline" class="nav-link text-sm tracking-wide hover:text-black">TIMELINE</a>
+                    <a href="index.html#work" class="nav-link text-sm tracking-wide hover:text-black">WORK</a>
+                    <a href="index.html#contact" class="nav-link text-sm tracking-wide hover:text-black">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center px-6 pt-20">
+            <div class="max-w-4xl w-full">
+                <p class="text-sm tracking-widest text-gray-500 mb-4">PROJECT 02 / 2025</p>
+
+                <h1 class="text-5xl md:text-7xl font-light mb-6 glow-text">
+                    Industrial Robot Maze Navigation
+                </h1>
+
+                <p class="text-xl md:text-2xl text-gray-600 font-light max-w-2xl leading-relaxed mb-8">
+                    A vision-guided robotic manipulation system enabling an industrial robot to autonomously navigate a
+                    complex 3D maze using calibrated perception, custom kinematics, and trajectory planning.
+                </p>
+
+                <!-- Skill Tags -->
+                <div class="flex flex-wrap gap-3 mb-12">
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Python</span>
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">OpenCV</span>
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Robotics</span>
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Inverse
+                        Kinematics</span>
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Trajectory
+                        Planning</span>
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">ArUco /
+                        ChArUco</span>
+                    <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Camera
+                        Calibration</span>
+                </div>
+
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="px-6 py-3 bg-black text-white rounded-full font-light tracking-wide hover:bg-gray-800 transition-all text-sm">
+                        VIEW DOCUMENTATION
+                    </a>
+                    <a href="#"
+                        class="px-6 py-3 bg-white border border-black/20 text-black rounded-full font-light tracking-wide hover:bg-black/5 transition-all text-sm">
+                        VIEW CODE
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Image -->
+        <section class="max-w-6xl mx-auto px-6 py-20">
+            <div class="rounded-2xl overflow-hidden border border-black/10 bg-gradient-to-br from-gray-100 to-gray-200">
+                <div class="aspect-video flex items-center justify-center">
+                    <p class="text-gray-400 text-lg tracking-wide">ROBOT + MAZE HERO IMAGE</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Info -->
+        <section class="max-w-6xl mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-3 gap-16">
+                <div>
+                    <h3 class="text-sm tracking-widest text-gray-500 mb-4">ROLE</h3>
+                    <p class="text-gray-800 leading-relaxed">Robotics Engineer<br>Computer Vision Developer</p>
+                </div>
+                <div>
+                    <h3 class="text-sm tracking-widest text-gray-500 mb-4">TIMELINE</h3>
+                    <p class="text-gray-800 leading-relaxed">2 months (Oct – Nov 2025)</p>
+                </div>
+                <div>
+                    <h3 class="text-sm tracking-widest text-gray-500 mb-4">TEAM</h3>
+                    <p class="text-gray-800 leading-relaxed">3 members — CTU Robotics Project</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-line max-w-6xl mx-auto"></div>
+
+        <!-- Overview -->
+        <section class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-light mb-8 tracking-wide">OVERVIEW</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    The project involved designing a complete perception–control pipeline enabling a Mitsubishi RV-6S
+                    industrial robot to autonomously navigate a 3D rod-shaped maze using a ring-shaped end-effector. The
+                    system used an overhead Basler RGB camera for pose estimation and custom trajectory planning to
+                    follow complex spatial paths without collisions.
+                </p>
+                <p>
+                    The robot performs intrinsic camera calibration using ChArUco markers, detects maze pose with ArUco,
+                    aligns its end-effector, and executes the required variant trajectory (A–D). For
+                    orientation-dependent segments, a custom IK-selection strategy minimizes hoop displacement and
+                    prevents wrist flips.
+                </p>
+            </div>
+        </section>
+
+        <!-- Challenge -->
+        <section class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-light mb-8 tracking-wide">THE CHALLENGE</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    Navigating the maze required precise spatial alignment and high positional stability. Several
+                    challenges had to be overcome:
+                </p>
+
+                <ul class="list-none space-y-3 pl-6 border-l-2 border-black/10">
+                    <li>• Robust detection of maze pose under variable lighting</li>
+                    <li>• Calibration accuracy for mapping pixel → robot coordinates</li>
+                    <li>• Avoiding IK branch flips in spatial trajectories</li>
+                    <li>• Collision-free traversal in a tight environment</li>
+                    <li>• Real-time pose adjustment and error compensation</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Solution -->
+        <section class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-light mb-8 tracking-wide">THE SOLUTION</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    The final solution integrates perception, calibration, motion planning, and robot control into a
+                    unified execution pipeline:
+                </p>
+
+                <ul class="list-none space-y-3 pl-6 border-l-2 border-black/10">
+                    <li>• ChArUco-based intrinsic camera calibration</li>
+                    <li>• ArUco marker detection for reliable maze localization</li>
+                    <li>• Empirical hoop-plane calibration for pixel-to-world mapping</li>
+                    <li>• Custom motion primitives for world-frame and tool-frame control</li>
+                    <li>• IK-branch selection algorithm minimizing hoop displacement</li>
+                    <li>• Variant-specific trajectory execution (A–D)</li>
+                </ul>
+
+                <p>
+                    This architecture allowed the robot to adapt to changing maze placements and perform multiple trial
+                    runs with high repeatability.
+                </p>
+            </div>
+        </section>
+
+        <!-- Image Grid -->
+        <section class="max-w-6xl mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="rounded-2xl overflow-hidden border border-black/10 bg-gradient-to-br from-gray-100 to-gray-200">
+                    <div class="aspect-video flex items-center justify-center">
+                        <p class="text-gray-400 text-sm tracking-wide">MAZE VARIANTS IMAGE</p>
+                    </div>
+                </div>
+                <div
+                    class="rounded-2xl overflow-hidden border border-black/10 bg-gradient-to-br from-gray-100 to-gray-200">
+                    <div class="aspect-video flex items-center justify-center">
+                        <p class="text-gray-400 text-sm tracking-wide">ARUCO DETECTION IMAGE</p>
+                    </div>
+                </div>
+
+                <div
+                    class="rounded-2xl overflow-hidden border border-black/10 bg-gradient-to-br from-gray-100 to-gray-200 md:col-span-2">
+                    <div class="aspect-video flex items-center justify-center">
+                        <p class="text-gray-400 text-sm tracking-wide">ROBOT EXECUTION SEQUENCE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section class="max-w-4xl mx-auto px-6 py-20">
+            <h2 class="text-4xl font-light mb-8 tracking-wide">RESULTS</h2>
+
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg mb-12">
+                <p>
+                    The system achieved strong reliability across all evaluated variants. Variants A–C reached a 100%
+                    success rate, while Variant D achieved approximately 90% due to occasional less optimal IK
+                    configurations during orientation-based traversal.
+                </p>
+                <p>
+                    The project demonstrated robust perception, stable control, and precise execution in a constrained
+                    3D environment.
+                </p>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-light mb-2">100%</div>
+                    <p class="text-gray-500 text-sm tracking-wide">SUCCESS (A–C)</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-light mb-2">90%</div>
+                    <p class="text-gray-500 text-sm tracking-wide">SUCCESS (VARIANT D)</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-light mb-2">30+</div>
+                    <p class="text-gray-500 text-sm tracking-wide">SUCCESSFUL TRIAL RUNS</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-line max-w-6xl mx-auto"></div>
+
+        <!-- Next Project -->
+        <section class="max-w-6xl mx-auto px-6 py-20">
+            <div class="text-center mb-12">
+                <p class="text-sm tracking-widest text-gray-500 mb-4">NEXT PROJECT</p>
+                <h2 class="text-4xl font-light mb-6 tracking-wide">TVC Rocket Stabilization System</h2>
+                <a href="project-rocket.html"
+                    class="inline-block px-8 py-3 bg-black text-white rounded-full font-light tracking-wide hover:bg-gray-800 transition-all">
+                    VIEW PROJECT →
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-black/5 py-8 bg-white/50 backdrop-blur-sm">
+            <div
+                class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+                <p>© 2025 All rights reserved</p>
+                <p class="tracking-wider">DESIGNED & ENGINEERED WITH PRECISION</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>   
+</body>
+
+</html>

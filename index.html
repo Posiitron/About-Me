@@ -70,7 +70,7 @@
                                 <path
                                     d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                             </svg> -->
-                            <img src="pfp.jpeg" alt="Profile Picture" class="w-full h-full object-cover">
+                            <img src="images/pfp.jpeg" alt="Profile Picture" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -bottom-2 -right-2 w-20 h-20 bg-black rounded-full blur-2xl opacity-10">
                         </div>
@@ -115,7 +115,8 @@
 
                         <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Fusion 360,
                             OpenSCAD, FreeCAD</span>
-                        <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Circuit Design - KiCad</span>
+                        <span class="skill-tag px-4 py-2 bg-black/5 rounded-full text-sm tracking-wide">Circuit Design -
+                            KiCad</span>
                     </div>
                 </div>
             </div>
@@ -207,60 +208,90 @@
             <h2 class="text-4xl font-light mb-12 tracking-wide">SELECTED WORK</h2>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="project-card bg-white/60 backdrop-blur-sm rounded-lg p-8">
-                    <div class="text-sm text-gray-500 mb-4 tracking-widest">PROJECT 01</div>
-                    <h3 class="text-2xl font-light mb-4">E-Commerce Platform</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        A modern e-commerce solution with seamless checkout experience and real-time inventory
-                        management.
-                    </p>
-                    <div class="flex gap-2">
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">React</span>
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Node.js</span>
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">MongoDB</span>
+                <a href="project-01.html" target="_blank"
+                    class="project-card bg-white/60 backdrop-blur-sm rounded-lg overflow-hidden no-underline block">
+                    <div class="project-image-container">
+                        <img src="images/robotndmaze.jpeg"
+                            alt="Industrial Robot Maze Navigation" class="project-image" loading="lazy">
+                        <div class="project-image-overlay"></div>
                     </div>
-                </div>
+                    <div class="p-8">
+                        <div class="text-sm text-gray-500 mb-4 tracking-widest">PROJECT</div>
+                        <h3 class="text-2xl font-light mb-4">Industrial Robot Maze Navigation</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A vision-guided robotic manipulation system developed
+                            using a Mitsubishi RV-6S industrial arm and an overhead Basler RGB camera. The project
+                            integrates robotic kinematics, ArUco-based pose estimation, ChArUco camera calibration, and real-time trajectory planning. The robot
+                            autonomously detects maze position, aligns its end-effector, and executes variants A–D with
+                            high repeatability and collision-free precision.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Industrial Robotics</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Robot Kinematics</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Mitsubishi RV-6S</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Computer Vision</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">OpenCV</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">ChArUco, ArUco</span>
+                        </div>
+                    </div>
+                </a>
 
-                <div class="project-card bg-white/60 backdrop-blur-sm rounded-lg p-8">
-                    <div class="text-sm text-gray-500 mb-4 tracking-widest">PROJECT 02</div>
-                    <h3 class="text-2xl font-light mb-4">Portfolio Redesign</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Complete brand refresh and website redesign for a creative agency, focusing on visual
-                        storytelling.
-                    </p>
-                    <div class="flex gap-2">
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Figma</span>
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">GSAP</span>
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Three.js</span>
+                <a href="https://tvc-rocket.vercel.app/" target="_blank"
+                    class="project-card bg-white/60 backdrop-blur-sm rounded-lg overflow-hidden no-underline block">
+                    <div class="project-image-container">
+                        <img src="images/tvc-rocket.png" alt="Thrust Vector Control for Model Rockets" class="project-image">
+                        <div class="project-image-overlay"></div>
                     </div>
-                </div>
+                    <div class="p-8">
+                        <div class="text-sm text-gray-500 mb-4 tracking-widest">PROJECT</div>
+                        <h3 class="text-2xl font-light mb-4"></h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            This project implements a Thrust Vector Control (TVC) system for model rockets. The system
+                            actively stabilizes the rocket during flight by adjusting the direction of thrust, enabling
+                            precise flight control and improved stability.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">DIY</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Aerospace</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Model Rocketry</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">PID Control</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Kalman Filter </span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Control Systems</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Thrust Vectoring</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Embedded Systems</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Hardware</span>
+                        </div>
+                    </div>
+                </a>
 
-                <div class="project-card bg-white/60 backdrop-blur-sm rounded-lg p-8">
-                    <div class="text-sm text-gray-500 mb-4 tracking-widest">PROJECT 03</div>
-                    <h3 class="text-2xl font-light mb-4">Mobile App Design</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Intuitive fitness tracking application with personalized workout plans and progress analytics.
-                    </p>
-                    <div class="flex gap-2">
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">React Native</span>
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Firebase</span>
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">UI/UX</span>
+                <a href="https://akramami-fcac4b.pages.fel.cvut.cz/" target="_blank"
+                    class="project-card bg-white/60 backdrop-blur-sm rounded-lg overflow-hidden no-underline block">
+                    <div class="project-image-container">
+                        <img src="images/mit-anything.png" alt=" How to Make Almost Anything Course"
+                            class="project-image">
+                        <div class="project-image-overlay"></div>
                     </div>
-                </div>
-
-                <div class="project-card bg-white/60 backdrop-blur-sm rounded-lg p-8">
-                    <div class="text-sm text-gray-500 mb-4 tracking-widest">PROJECT 04</div>
-                    <h3 class="text-2xl font-light mb-4">Dashboard Analytics</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Real-time analytics dashboard for data visualization with interactive charts and reports.
-                    </p>
-                    <div class="flex gap-2">
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Vue.js</span>
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">D3.js</span>
-                        <span class="text-xs px-3 py-1 bg-black/10 rounded-full">API</span>
+                    <div class="p-8">
+                        <div class="text-sm text-gray-500 mb-4 tracking-widest">COURSE</div>
+                        <h3 class="text-2xl font-light mb-4">How to Make (Almost) Anything</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            This page is where I'll showcase my journey through the course "Jak Vyrobit Téměř Cokoliv",
+                            CTU's version of MIT's legendary "How to Make (Almost) Anything"
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">3D Design</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">CNC Machining</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Laser Cutting</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Electronics Manufacturing</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Forming & Casting</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Kinetic Structures</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">Sensors & Actuators</span>
+                            <span class="text-xs px-3 py-1 bg-black/10 rounded-full">App Development</span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+
         </section>
 
         <!-- Contact Section -->
